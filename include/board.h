@@ -80,4 +80,8 @@
 #include "sama5d4ek.h"
 #endif
 
+#ifdef CONFIG_SAMA5D3_ACQUA
+#include "sama5d3_acqua.h"
+#endif
+
 #endif /* #ifndef __BOARD_H__ */
