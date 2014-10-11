@@ -712,6 +712,19 @@ static unsigned int set_default_sn(void)
 	vendor_dm = VENDOR_FLEX;
 	vendor_ek = VENDOR_FLEX;
 
+#elif defined(CONFIG_AT91SAM9X5_ARIETTA)
+	/* at91sam9x5_arietta
+	 * CPU Module: SAM9X25-CM, EMBEST
+	 * Display Module: SAM9x5-DM, FLEX
+	 * EK Module: SAM9x5-EK, FLEX
+	 */
+	board_id_cm = BOARD_ID_SAM9X25_CM;
+	board_id_dm = BOARD_ID_SAM9x5_DM;
+	board_id_ek = BOARD_ID_SAM9X5_EK;
+	vendor_cm = VENDOR_EMBEST;
+	vendor_dm = VENDOR_FLEX;
+	vendor_ek = VENDOR_FLEX;
+
 #elif defined(CONFIG_SAMA5D3XEK)
 
 	/* sama5d3xek
@@ -758,6 +771,19 @@ static unsigned int set_default_rev(void)
 
 #if defined(CONFIG_AT91SAM9X5EK)
 	/* at91sam9x5ek
+	 * CPU Module: 'B', '1'
+	 * Display Module: 'B', '0'
+	 * EK Module: 'B','0'
+	 */
+	rev_cm = 'B';
+	rev_dm = 'B';
+	rev_ek = 'B';
+	rev_id_cm = '1';
+	rev_id_dm = '0';
+	rev_id_ek = '0';
+
+#elif defined(CONFIG_AT91SAM9X5_ARIETTA)
+	/* at91sam9x5_arietta
 	 * CPU Module: 'B', '1'
 	 * Display Module: 'B', '0'
 	 * EK Module: 'B','0'
