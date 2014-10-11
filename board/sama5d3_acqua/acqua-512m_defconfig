@@ -1,7 +1,3 @@
-#
-# Automatically generated make config: don't edit
-# Sat Oct 11 08:25:11 2014
-#
 HAVE_DOT_CONFIG=y
 # CONFIG_AT91SAM9260EK is not set
 # CONFIG_AT91SAM9261EK is not set
@@ -115,7 +111,7 @@ CONFIG_LINUX_ZIMAGE=y
 # Linux Image Storage Setup
 #
 CONFIG_MEM_BANK="0x20000000"
-CONFIG_MEM_SIZE="0x10000000"
+CONFIG_MEM_SIZE="0x20000000"
 CONFIG_LINUX_KERNEL_ARG_STRING="mem=512M console=ttyS0,115200 root=/dev/mmcblk0p2 rootfstype=ext4 rootdelay=1 consoleblank=0"
 CONFIG_JUMP_ADDR="0x22000000"
 CONFIG_OF_LIBFDT=y
