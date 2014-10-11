@@ -23,6 +23,7 @@ source "board/sama5d3_xplained/Config.in.board"
 source "board/sama5d4ek/Config.in.board"
 source "board/sama5d3_acqua/Config.in.board"
 source "board/at91sam9x5_arietta/Config.in.board"
+source "board/at91sam9x5_aria/Config.in.board"
 
 endchoice
 
@@ -47,6 +48,7 @@ source "board/sama5d3_xplained/Config.in.boardname"
 source "board/sama5d4ek/Config.in.boardname"
 source "board/sama5d3_acqua/Config.in.boardname"
 source "board/at91sam9x5_arietta/Config.in.boardname"
+source "board/at91sam9x5_aria/Config.in.boardname"
 
 config AT91SAM9260
 	bool

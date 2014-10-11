@@ -84,6 +84,10 @@
 #include "sama5d3_acqua.h"
 #endif
 
+#ifdef CONFIG_AT91SAM9X5_ARIA
+#include "at91sam9x5_aria.h"
+#endif
+
 #ifdef CONFIG_AT91SAM9X5_ARIETTA
 #include "at91sam9x5_arietta.h"
 #endif
