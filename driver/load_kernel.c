@@ -79,16 +79,18 @@ static int setup_dt_blob(void *blob)
 	for (p = bootargs; *p == ' '; p++)
 		;
 
-	if (*p == '\0')
-		return -1;
+        if (*p != '\0'){
+                 // override bootargs with LINUX_KERNEL_ARG_STRING
+                ret = fixup_chosen_node(blob, p);
+                if (ret)
+                        return ret;
+ 
+                 // override "/memory" node with MEM_BANK, MEM_SIZE
+                ret = fixup_memory_node(blob, &mem_bank, &mem_size);
+                if (ret)
+                        return ret;
+         }
 
-	ret = fixup_chosen_node(blob, p);
-	if (ret)
-		return ret;
-
-	ret = fixup_memory_node(blob, &mem_bank, &mem_size);
-	if (ret)
-		return ret;
 
 	return 0;
 }
