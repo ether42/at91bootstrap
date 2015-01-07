@@ -1,6 +1,6 @@
 #
 # Automatically generated make config: don't edit
-# Wed Jan  7 11:58:46 2015
+# Wed Jan  7 12:36:55 2015
 #
 HAVE_DOT_CONFIG=y
 # CONFIG_AT91SAM9260EK is not set
@@ -109,8 +109,8 @@ CONFIG_LOAD_LINUX=y
 # CONFIG_LOAD_1MB is not set
 # CONFIG_LOAD_4MB is not set
 # CONFIG_LOAD_64KB is not set
-CONFIG_LINUX_UIMAGE=y
-# CONFIG_LINUX_ZIMAGE is not set
+# CONFIG_LINUX_UIMAGE is not set
+CONFIG_LINUX_ZIMAGE=y
 
 #
 # Linux Image Storage Setup
@@ -121,7 +121,7 @@ CONFIG_LINUX_KERNEL_ARG_STRING="mem=128M console=ttyS0,115200 root=/dev/mmcblk0p
 CONFIG_JUMP_ADDR="0x22000000"
 CONFIG_OF_LIBFDT=y
 CONFIG_OF_ADDRESS="0x21000000"
-CONFIG_IMAGE_NAME="uImage"
+CONFIG_IMAGE_NAME="zImage"
 CONFIG_DEBUG=y
 CONFIG_DEBUG_INFO=y
 # CONFIG_DEBUG_LOUD is not set
